@@ -1,0 +1,68 @@
+/* font from google fonts  (www.googlefonts.com)*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #3333339b .3px solid;
+    box-shadow: 0px 12px 23px -22px rgba(0,0,0,0.71);
+    margin-bottom: 2rem;
+    background-color: #046169;
+    margin-top: none ;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#navbar .logo {
+    font-family: 'Lato', sans-serif;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+#navbar .logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+}
+#navbar .logo p {
+    font-size: 0.75rem;
+    color: #333333;
+    margin-top: 0.15rem;
+    
+}
+
+/* Style for navbar links */
+
+
+#navbar .nav-links {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+#navbar .nav-links a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+}
+
+
+#navbar .nav-links a:hover {
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
