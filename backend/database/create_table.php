@@ -18,8 +18,7 @@ function create_table() {
         make VARCHAR(100) NOT NULL,
         model VARCHAR(100) NOT NULL,
         part_type VARCHAR(100) NOT NULL,
-        part_number VARCHAR(255) NOT NULL,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        part_number VARCHAR(255) NOT NULL
     )";
 
     if ($conn->query($sql) === TRUE) {
