@@ -14,9 +14,6 @@ function create_connection($HOSTNAME, $USERNAME, $PASSWORD, $DATABASE, $PORT) {
     if (!$conn) {
         die("Connection failed: " . $conn->connect_error);
     }
-    else {
-        echo "Connected successfully";
-    }
     return $conn;
 }
 

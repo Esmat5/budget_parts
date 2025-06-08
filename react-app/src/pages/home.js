@@ -4,6 +4,8 @@ import PartSearchForm from "../components/PartSearchForm/PartSearchForm";
 
 
 export default function Home() {
+
+
   return (
     <div className="home-page-container">
       {/* Navbar component */}
