@@ -4,12 +4,11 @@ import "./partSearchForm.css"; // Import the CSS file for styling
 
 export default function PartSearchForm() {
     return (
-        <div className="container">
-            <div className="part-search-header">
-                <h1>Search for Parts</h1>
-            </div>
             <div id="part-search-form">
                 <form className="form-container">
+                    <div className="part-search-header">
+                        <h1>Search For Parts</h1>
+                    </div>
                     <div className="row">
                         <div className="form-group">
                             <select id="make" name="make">
@@ -38,10 +37,9 @@ export default function PartSearchForm() {
 
                     </div>
                     <div className="button-row">
-                        <input type="submit" value="Search Now"/>
+                        <input type="submit" value="Search Now" />
                     </div>
                 </form>
             </div>
-        </ div>
     );
 }

@@ -1,22 +1,24 @@
-.container {
-    width: 100%;
-}
+/* font from google fonts  (www.googlefonts.com)*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 
 #part-search-form {
     display: flex;
     justify-content: center;
 }
 
+
 .part-search-header{
     width: 100%;
+    font-family: "Lato", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #046169;
+    color: #fff;
     padding-bottom: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    margin: 0 auto;
+
 }
 
 .form-container {
@@ -25,7 +27,10 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 4rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
     background-color: #fff;
     border-radius: 8px;
     background-color: #046169;
@@ -48,6 +53,8 @@
 
 
 .form-group select{
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
     background-color: #fff;
     border: none;
     padding: 1rem;
@@ -76,10 +83,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    
     
 }
 .form-container .button-row input {
-    width: 25%;
+    font-family: "Lato", sans-serif;
+    width: 30%;
     font-size: 1.2rem;
     padding: 1rem;
     background-color: #10898d;
@@ -87,4 +98,5 @@
     border: none;
     cursor: pointer;
     border-radius: 6px;
+    box-shadow: rgba(3, 47, 60, 0.099) 0px 4px 16px, rgba(3,47,60, 0.099) 0px 8px 24px, rgba(3,47,60, 0.099) 0px 16px 56px;
 }
