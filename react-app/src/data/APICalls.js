@@ -27,6 +27,22 @@ const getAllModelsAndTypes = async (make) => {
 }
 
 
-export { getDistinctMakes, getAllModelsAndTypes };
+const getPartNumber = async (make, model, partType) => {
+  try {
+    const response = await axios.post(`${API_BASE_URL}/database/get_requested_part.php?`,{
+      make: make,
+      model: model,
+      part_type: partType
+    })
+    console.log('Part number fetched successfully:', response.data);
+    return response.data;
+  }
+  catch (error) {
+    console.error('Error fetching part number:', error);
+    throw error;  
+  }
+}
+
+export { getDistinctMakes, getAllModelsAndTypes, getPartNumber };
 
 
