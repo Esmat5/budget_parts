@@ -6,7 +6,7 @@ A full-stack application built with PHP and react to search and display auto par
 - [PHP (8.1+ recommended)](https://www.php.net/downloads.php)
 - [Composer](https://getcomposer.org/)
 - [Node.js + npm](https://nodejs.org/)
-- [MySQL Workbench] (https://dev.mysql.com/downloads/workbench/)
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 ### Getting Started:
 - Navigate to the backend directory using your terminal:
