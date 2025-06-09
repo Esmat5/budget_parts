@@ -1,14 +1,21 @@
 import React from "react";
 import "./partSearchForm.css"; // Import the CSS file for styling
 import {getDistinctMakes, getAllModelsAndTypes} from "../../data/APICalls"; 
+import UseSearchFormHook from "./SearchFormHook";
+
 
 export default function PartSearchForm() {
     const [models, setModels] = React.useState([]);
     const [types, setTypes] = React.useState([]);
     const [makes, setMakes] = React.useState([]);
-
     const [selectedMake, setSelectedMake] = React.useState("");
-    
+
+    const {formValues,
+        errors,
+        handleChange,
+        handleSubmit,} = UseSearchFormHook();
+
+
     const fetchMakes = async () => {
       try {
         const distinctMakes = await getDistinctMakes();
@@ -43,17 +50,22 @@ export default function PartSearchForm() {
 
     return (
             <div id="part-search-form">
-                <form className="form-container">
+                <form className="form-container" onSubmit={handleSubmit}>
                     <div className="part-search-header">
                         <h1>Search For Parts</h1>
+                    </div>
+                    <div className="form-errors">
+                        {errors.make || errors.model || errors.type && <p className="error">Please Select Fields</p>}
                     </div>
                     <div className="row">
                         <div className="form-group">
                             <select id="make" name="make"
                             onChange={(e) => {
+                                handleChange(e);
                                 const choosenMake = e.target.value;
                                 setSelectedMake(choosenMake);
-                                fetchModelsAndTypes(choosenMake);}}>
+                                fetchModelsAndTypes(choosenMake);}}
+                                value={formValues.make}>
                                 <option value="">Select Make</option>
                                 {
                                     makes.length === 0 ? (
@@ -67,7 +79,7 @@ export default function PartSearchForm() {
                             </select>
                         </div>
                         <div className="form-group">
-                            <select id="model" name="model">
+                            <select id="model" name="model" value={formValues.model} onChange={handleChange}>
                                 <option value="">Select Model</option>
                                 {
                                     models.length === 0 ? (
@@ -82,7 +94,7 @@ export default function PartSearchForm() {
                         </div>
 
                         <div className="form-group">
-                            <select id="type" name="type">
+                            <select id="type" name="partType" value={formValues.partType} onChange={handleChange}>
                                 <option value="">Select Type</option>
                                 {
                                     types.length === 0 ? (
