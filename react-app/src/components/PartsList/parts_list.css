@@ -1,0 +1,87 @@
+/* font from google fonts  (www.googlefonts.com)*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.parts-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+
+.parts-list-header {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    color: #046169;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+}
+
+.parts-list-header h2 {
+    margin: 0;
+}
+
+.parts-list-container ul {
+    padding: 0;
+    margin: 0;  
+}
+
+.parts-list-container .parts-list {
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 3rem;
+     box-shadow: rgba(3, 47, 60, 0.099) 0px 4px 16px, rgba(3,47,60, 0.099) 0px 8px 24px, rgba(3,47,60, 0.099) 0px 16px 56px;
+}
+
+
+.part-card li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.part-row {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+    font-family: "Lato", sans-serif;
+}
+
+
+.no-parts-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-parts-container h2 {
+    font-family: "Lato", sans-serif;
+    color: #046169;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+
+
+

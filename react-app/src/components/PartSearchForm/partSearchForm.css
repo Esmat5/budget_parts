@@ -100,3 +100,11 @@
     border-radius: 6px;
     box-shadow: rgba(3, 47, 60, 0.099) 0px 4px 16px, rgba(3,47,60, 0.099) 0px 8px 24px, rgba(3,47,60, 0.099) 0px 16px 56px;
 }
+
+
+.form-errors {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}   

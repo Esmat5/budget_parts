@@ -4,7 +4,7 @@ export const FormValidation = (values) => {
   let errors = {};
 
   if (!values.make || !values.model || !values.partType) {
-    errors.make = "Please select all fields";
+    errors.make = "Please Select All Fields";
   }
 
   return errors;
