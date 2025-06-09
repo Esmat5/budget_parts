@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import PartSearchForm from "../components/PartSearchForm/PartSearchForm";
 import { getPartNumber } from "../data/APICalls";
-
+import Footer from "../components/Footer/Footer";
+import "./home.css";
 export default function Home() {
   const [partNumber, setPartNumber] = React.useState("");
 
@@ -32,6 +33,10 @@ export default function Home() {
       
       <div className="search-form-container">
         <PartSearchForm />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   );

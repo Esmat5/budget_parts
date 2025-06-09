@@ -1,0 +1,9 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.search-form-container {
+    flex: 1; 
+}

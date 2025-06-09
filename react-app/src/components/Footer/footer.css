@@ -1,0 +1,22 @@
+/* font from google fonts  (www.googlefonts.com)*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: #046169;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
