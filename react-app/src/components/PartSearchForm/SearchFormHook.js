@@ -10,6 +10,7 @@ function UseSearchFormHook() {
         partType: "",
     });
     const [errors, setErrors] = useState({});
+    const [parts, setParts] = useState([]); 
 
     async function handleSubmit(event) {
         event.preventDefault(); 
@@ -26,7 +27,9 @@ function UseSearchFormHook() {
 
             const foundPart = await getPartNumber(formValues.make, formValues.model, formValues.partType);
 
-            if ( foundPart != null){
+            if ( foundPart && foundPart.length > 0){
+                // If part is found, update parts state
+                setParts(foundPart); 
                 console.log("Part found:", foundPart);
                 // Reset form values if needed
                 setFormValues({
@@ -37,6 +40,8 @@ function UseSearchFormHook() {
                 setErrors({});
             }
             else {
+                // If part is not found, set an error message
+                setParts([]); 
                 setErrors({ partType: "Part not found" });
             }
         } catch (error) {
@@ -58,6 +63,7 @@ function UseSearchFormHook() {
         errors,
         handleChange,
         handleSubmit,
+        parts, 
     };
 }
 
