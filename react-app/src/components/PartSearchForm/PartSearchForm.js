@@ -45,7 +45,6 @@ export default function PartSearchForm() {
 
     React.useEffect(() => {
         fetchMakes();
-        fetchModelsAndTypes();
     }, []);
 
 
